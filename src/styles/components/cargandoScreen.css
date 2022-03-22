@@ -1,0 +1,12 @@
+.cargandoS_container{
+    display: grid;
+    margin: 0 auto;
+}
+
+.cargandoS_center{
+    justify-self: center;
+    align-self: center;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333333;
+}

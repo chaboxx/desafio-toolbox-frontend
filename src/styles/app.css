@@ -1,0 +1,16 @@
+.app_mostrar{
+    display: grid;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    height: 50px;
+}
+
+.app_ocultar{
+    display: none !important;
+   
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}

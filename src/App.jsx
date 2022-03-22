@@ -22,7 +22,7 @@ function App() {
   
   useEffect(() => {
     
-    getAll("/domain-csv")
+    getAll("/files/data")
     
   }, [])
   
@@ -36,7 +36,7 @@ function App() {
   const filtrarPorFileName = async(e) =>{
     
     try {
-      const resp =await getByQuery("/domain-csv",fileName || "fileName")
+      const resp =await getByQuery("/files/data",fileName || "fileName")
       
       return setDataFiltrado(resp.data.data)
     } catch (error) {
@@ -71,7 +71,7 @@ function App() {
 
           <InputGroup className="mb-3">
             <FormControl
-              placeholder="Filtrar Por Nombre"
+              placeholder="Filtrar Por Nombre llamada a la api por query..."
               value={fileName}
               onChange={(e)=>setFileName(e.target.value)}
             />
